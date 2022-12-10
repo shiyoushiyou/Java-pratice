@@ -17,3 +17,12 @@ public class ForExercise {
 
     }
 }
+class ForExercise02{
+    public static void main(String[]args){
+        int i = 0;
+        int j =5;
+        for(;i<6;i++,j--){
+            System.out.println(i+"+"+j+"="+(i+j));
+        }
+    }
+}
