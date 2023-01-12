@@ -20,7 +20,7 @@ System.out.println(arr2[i]);
 }
 arr =arr2;
 }
-else if(Answer =='Y'&&arr.length<1)
+else if(Answer =='Y'&&arr.length<=1)
 {
 System.out.println("You couldn't reduce the list anymore!");
 break;
