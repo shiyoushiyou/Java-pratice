@@ -48,8 +48,6 @@ class practice3_3{
         System.out.println("こんにちは");
         System.out.println("お腹空いてますか？\n"+"0→お腹がいっぱい  1→はらぺこ");
         int isHungry = Sca.nextInt();
-        //また、String型の変数foodを定義し、
-        //適当な食べものの名前を代入する。
 
         //③もし変数isHungryが０であれば「お腹がいっぱいです」、
         //そうでなければ「はらぺこです」と表示する。
@@ -61,6 +59,8 @@ class practice3_3{
             //④もし変数isHungryが空腹を示すならば、変数foodを利用して
             //「○○ををいただきます」と表示する（○○には食べものの名前が入る）。
             System.out.println("何が食べたいですか？");
+            //また、String型の変数foodを定義し、
+            //適当な食べものの名前を代入する。
             String food = Sca.nextLine();
             if (food != null){
                 System.out.println(food+"ををいただきます");  
