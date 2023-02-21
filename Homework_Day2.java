@@ -101,3 +101,41 @@ class practice3_5{
     }
     }
 }
+
+class DayOfMonth{
+    public void DayOfMonth_(String[] args) {
+        System.out.println("請輸入查詢月份");
+        int month = new java.util.Scanner(System.in) .nextInt();
+        int day =0;
+        switch(month){
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                day =31;
+                break;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                day =30;
+                break;
+                // 判断输入的年是否是闰年
+                // A：能被4整除并且不能被100整除
+                // B：或者能被400整除
+            case 2:
+                System.out.println("請輸入今年年分");
+                int year = new java.util.Scanner(System.in) .nextInt();
+                if(year/4==0&&year/100!=0||year/400==0) {
+                    day = 29;
+                }else {
+                    day = 28;
+                }
+                break;	
+        }
+        System.out.println("你查詢的"+month+"月共"+day+"天");
+    }
+}
