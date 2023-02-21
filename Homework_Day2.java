@@ -2,7 +2,6 @@ import java.util.Scanner;
 
 public class Homework_Day2 {
     public static void main(String[]args){ 
-        
     }
 }
 
@@ -75,6 +74,16 @@ class practice3_3{
     }
 }
 
+class practice3_3_TernaryOperator{
+    public void P3_3_Ternary_Operator(){
+        //三元运算符
+        //ans == 0 ? "表" : "裏"		
+        //変数ansが0なら「表」、0以外なら「裏」に化ける		
+        int ans = new java.util.Scanner(System.in).nextInt();
+        int Front = 0;
+        System.out.print((ans <1)? "表" : "裏");
+    }
+}
 class practice3_5{
     public void P3_5(){
     //　練習　3-5
