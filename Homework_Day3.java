@@ -2,9 +2,10 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Homework_Day3 {
-    public static void main(String[]args){			
-        }
-    }    
+    public static void main(String[]args){		 	
+
+    }
+}    
 
 
 class practice3_6{//練習　3-6
@@ -33,9 +34,6 @@ class practice3_6{//練習　3-6
         }	
         //⑧繰り返しのブロックの外側で、「ゲームを終了します」と画面に表示する。		
         System.out.println("ゲームを終了します！");				
-
-        
-        
     }
 }
 
@@ -108,4 +106,49 @@ class triangle{
         System.out.println();
         }
   }
+}
+
+class practice4_2{//練習　4-2
+    public void practice_4_2(){
+        /*
+     * 次に示す3つの条件を満たすプログラムを作成してください。				
+    ①3つの口座残高「121902」「8302」「55100」が格納されているint型配列moneyListを宣言します。				
+    ②その配列の要素を1つずつfor文で取り出して画面に表示します。				
+    ③同じ配列の要素を拡張for文で1つずつ取り出して画面に表示します。	
+     * 
+     */
+    int[]moneyList = {121902,8302,55100};
+    for(int i = 0;i<moneyList.length;i++){
+         System.out.println(moneyList[i]);
+    } 
+     for(int money:moneyList){
+         System.out.println(money);
+    } 
+    }
+}
+
+class practice4_4{//練習　4-4
+    public void practice_4_4(){
+		// 次の条件を満たす「数あてクイズ」のプログラムを作成してください。													
+        //①int型で要素数3の配列numbersを準備します。
+        //このとき初期値はそれぞれ「3」「4」「9」とします。
+        int[]numbers = {3,4,9};
+         //②画面に「1桁の数字を入力してください」と表示します。
+        System.out.println("1桁の数字を入力してください");
+         //③次のコードを用いてキーボードから数字の入力を受け付け、変数inputに代入します。					
+        Scanner Sca = new Scanner(System.in);
+        int input = Sca.nextInt();
+        //④配列をループで回しながら、いずれかの要素と等しいかを調べます。					
+        //もし等しければ「アタリ!」と表示します。
+        int NoBingo = 0;
+        for(int i = 0;i<numbers.length;i++){
+            if(input==numbers[i]){
+                System.out.println("アタリ!");
+                NoBingo ++;
+            }
+        }
+        if(NoBingo ==0){
+            System.out.println("はずれ!");
+        }
+    }
 }
