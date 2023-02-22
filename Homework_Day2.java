@@ -84,6 +84,7 @@ class practice3_3_TernaryOperator{
         System.out.print((ans <1)? "表" : "裏");
     }
 }
+
 class practice3_5{
     public void P3_5(){
     //　練習　3-5
